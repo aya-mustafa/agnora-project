@@ -1,0 +1,427 @@
+html
+{
+    scroll-behavior: smooth;
+}
+/* ______Start Home Styling ______ */
+body
+{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.setting i
+{
+    position: absolute;
+    top:20%;
+    left:0px;
+    background-color: #f25454;
+    z-index: 9999;
+    color:#fff;
+    padding:12px;
+    position: fixed;
+    border-radius: 0px 3px 3px 0px ;
+}
+.move{
+    width: 26px;
+    height: 40px;
+    border:1px solid #fff;
+    border-radius: 15px;
+    position: absolute;
+    bottom:30px;
+    left:50%;
+    z-index: 9999;
+    transform: translateX(-50%);
+}
+.move::after{
+    content: "";
+    width:10px;
+    height:10px;
+    background-color:#fff;
+    border-radius: 50%;
+    position: absolute;
+    top:10%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation:move 2s  infinite ;
+}
+@keyframes move
+{
+    0% {top: 6px;opacity: 0;}
+    30% {opacity: 1;}
+    100% {top: 18px;opacity: 0;}
+    
+}
+.slider1
+{
+    background-image: url(../images/slideshow-2.jpg);
+    background-size: cover;
+    background-position:center center;
+}
+.slider2
+{
+    background-image: url(../images/slideshow-1.jpg);
+    background-size: cover;
+    background-position:center center;
+}
+.slider3
+{
+    background-image: url(../images/slideshow-3.jpg);
+    background-size: cover;
+    background-position:center center;
+}
+.carousel-info
+{
+    width:37%;
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 70px;
+}
+#home .chevron-left i ,#home .chevron-right i
+{
+    padding:15px 25px;
+   border: 1px solid #fff;
+   font-size: 25px;
+   border-radius: 3px ;
+   position: absolute;
+   top:0;
+   left:0;
+}
+#home .chevron-left i
+{
+    top:40%;
+    transform: translatex(-20%);
+}
+#home .carousel-control-next
+{
+    position: absolute;
+    top:319px;
+    left:0px;
+    transform: translatex(-14px);
+}
+#home .navbar
+{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    z-index: 100000;
+}
+.navbar-light .navbar-nav .active>.nav-link
+{
+    color: #f25454;
+}
+.navbar-light .navbar-nav .nav-link
+{
+    color: #fff;
+    transition: all 0.5s;
+}
+.navbar-light .navbar-nav .nav-link 
+{
+    font-size: 15px;
+    font-weight: 700;
+}
+.navbar-light .navbar-nav .nav-link:hover
+{
+    color: #f25454;
+}
+.navbar-toggler
+{
+    border:none;
+}
+.navbar-toggler i{
+    font-size: 25px;
+    color:#fff
+}
+/* ______End Home Styling ______ */
+
+
+/* ______Start About Styling ______ */
+
+.info 
+{
+    position: relative;
+}
+.info h2
+{
+    font-size: 70px;
+    font-weight: 800;
+    color:#f2f2f2
+}
+.info h3
+{
+    font-size:38px;
+    font-weight: 700;
+}
+.info .position
+{
+    position: absolute;
+    top:30%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.position::after{
+    content:"";
+    width:40px;
+    height:1px;
+    background-color: #000;
+    position: absolute;
+    margin: 15px 0;
+    top:100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 1s;
+}
+#about:hover .position::after,#team:hover .position::after
+,#services:hover .position::after,#contact:hover .position::after,
+#services2:hover .position::after,#service2:hover .position::after
+{
+    width:80px
+}
+.info p
+{
+    font-size: 18px;
+    font-weight: 400;
+    color: #999;
+    width:50%;
+    margin:auto;
+}
+.col-md-7  p{
+    font-size:15px;
+    color: #777
+}
+.progress .progress-bar
+{
+    background-color: #f25454;
+}
+/*  ______End About Styling ______ */
+
+
+/*  ______Start Team Styling ______ */
+.team-info .w-100
+{
+    border-radius: 6px;
+    transition: 0.5s all;
+}
+.team-info
+{
+    position: relative;
+    overflow: hidden;
+}
+.team-info .layer
+{
+    position: absolute;
+    top:0%;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity: 0;
+    background-color: rgba(242, 84, 84, 0.85); 
+    border-radius: 6px;
+    transition: 0.5s all;
+}
+.team-info:hover .w-100
+{
+    transform: scale(1.1);
+}
+.team-info:hover .layer
+{
+    opacity: 1;
+}
+.team-info-p span{
+    margin-bottom: 0;
+    font-weight: 700;
+}
+.team-info-p span
+{
+    font-size: 14px;
+    color:#666
+}
+.team-contact button
+{
+    padding:12px 25px;
+}
+/*  ______End Team Styling ______ */
+
+
+#services
+{
+    background-color: #fafafa;
+}
+#services .col-md-4 p
+{
+    color:#666
+}
+#services i ,#contact .color i{
+    color:#f25454;
+    font-size: 30px;
+    opacity: 0.6;
+}
+#services .col-md-4 h5
+{
+    transition: 0.5s all;
+}
+#services .col-md-4:hover h5
+{
+    color:#f25454
+}
+.carousel-img img
+{
+    width: 130px;
+    border-radius: 50%;
+}
+.carousel-img img
+{
+    width:130px;
+    border-radius: 50%;
+}
+#contact
+{
+    background-color: #fafafa;
+}
+#contact form button
+{
+    background-color: #f25454;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    color:#fff
+}
+.contact
+{
+    background-color: #222;;
+    background-image: url(../images/dotted-map.png);
+    background-size: contain;
+    color:#fff
+}
+.contact-info h5{
+    margin-bottom: 15px;
+}
+.contact-info ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.contact-info p,.contact-info li
+{
+    color:#999;
+    transition: all 1s;
+}
+.contact-info p:hover,.contact-info li:hover
+{
+    color:#f25454
+}
+.contact-info button
+{
+    border: 1px solid#999;;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    background-color: transparent;
+    padding: 3px 5px;
+    color:#999;;
+    transition: 0.5s all;
+}
+.contact-info button:hover
+{
+    color: #f25454;
+    background-color: transparent;
+    border: 1px solid #f25454;
+}
+
+
+/* ______Start Footer Styling ______ */
+.footer
+{
+    background-color: #1a1a1a;
+}
+.footer i{
+    margin-right: 25px;
+}
+.footer a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+.footer-info span
+{
+    color:#999
+}
+.footer a:hover
+{
+    color:#f25454
+}
+.footer .container
+{
+    text-align: right;
+}
+
+/* ______End Footer Styling ______ */
+
+
+@media (min-width:767px)and (max-width:991px)
+{
+    .carousel-info
+    {
+        width:50%
+    }
+}
+@media(max-width:767px)
+{
+    
+    .carousel-info{
+        font-size: 38px;
+        line-height: 40px;
+        width:60%;
+
+    }
+    .margin i 
+    {
+        margin-left: 20px;
+    }
+    .navbar-nav
+    {
+        background-color: #fff;
+        border-radius: 7px;
+    }
+    .navbar-light .navbar-nav .nav-link{
+        color:black
+    }
+    .continer
+    {
+        width:90% !important
+    }
+    .info-team img {
+        width: 100%;
+    }
+    .team-contact
+    {
+        text-align: center;
+    }
+    #service2 .para
+    {
+        width: 90% !important;
+    }
+    .contact-items h2{
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+    .footer .d-flex
+    {
+        justify-content: center;
+    }
+    .footer-info
+    {
+        margin-top: 10px;
+    }
+    .footer .container
+    {
+        text-align: center;
+    }
+}
+@media(max-width:500px)
+{
+    .margin-info
+    {
+        margin: 20px 0;
+    }
+    .info p{
+        width:85%
+    };
+}
